@@ -51,36 +51,38 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
       {/* LAYER 1: Base Black Background */}
       <div className="absolute inset-0 bg-[#080706] z-0" />
 
-      {/* LAYER 2: Flaming-Shield Video (Continuous Loop) */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          poster="/images/flaming-shield-poster.jpg"
-          onError={() => setVideoError(true)}
-          className={`h-full w-full object-cover object-center transition-opacity duration-1000 ${
-            videoPlaying ? 'opacity-70' : 'opacity-0'
-          }`}
-        >
-          <source src="/flaming-shield.mp4" type="video/mp4" />
-        </video>
+      {/* LAYER 2: Flaming-Shield Video (Continuous Loop) - End-to-end on mobile, scaled on desktop */}
+      <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden pointer-events-none w-full h-full">
+        <div className="relative w-full h-full flex items-center justify-center scale-100 md:scale-[0.70] origin-center">
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster="/images/flaming-shield-poster.jpg"
+            onError={() => setVideoError(true)}
+            className={`h-full w-full min-w-full min-h-full object-cover object-center transition-opacity duration-1000 ${
+              videoPlaying ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <source src="/flaming-shield.mp4" type="video/mp4" />
+          </video>
 
-        {/* Static Background Fallback if Video Autoplay is blocked or during load */}
-        {(!videoPlaying || videoError) && (
-          <div
-            className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-65"
-            style={{ backgroundImage: `url('/images/flaming-shield-poster.jpg')` }}
-          />
-        )}
+          {/* Static Background Fallback if Video Autoplay is blocked or during load */}
+          {(!videoPlaying || videoError) && (
+            <div
+              className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-95"
+              style={{ backgroundImage: `url('/images/flaming-shield-poster.jpg')` }}
+            />
+          )}
+        </div>
       </div>
 
       {/* LAYER 3: Deep Red and Black Atmospheric Overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-[#080706] via-[#080706]/60 to-[#080706]/40" />
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-[#080706]/80 via-transparent to-[#080706]" />
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-[#080706] via-[#080706]/40 to-[#080706]/20" />
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-[#080706]/60 via-transparent to-[#080706]" />
 
       {/* LAYER 4: Radial Light & Heat Glow around Center Shield */}
       <div
