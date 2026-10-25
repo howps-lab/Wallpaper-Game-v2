@@ -63,7 +63,7 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
             preload="auto"
             poster="/images/flaming-shield-poster.jpg"
             onError={() => setVideoError(true)}
-            className={`h-full w-full min-w-full min-h-full object-cover object-center transition-opacity duration-1000 ${
+            className={`h-full w-full min-w-full min-h-full object-cover object-center transition-opacity duration-1000 filter brightness-110 contrast-105 ${
               videoPlaying ? 'opacity-100' : 'opacity-0'
             }`}
           >
@@ -73,16 +73,16 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
           {/* Static Background Fallback if Video Autoplay is blocked or during load */}
           {(!videoPlaying || videoError) && (
             <div
-              className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-95"
+              className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-100 filter brightness-110"
               style={{ backgroundImage: `url('/images/flaming-shield-poster.jpg')` }}
             />
           )}
         </div>
       </div>
 
-      {/* LAYER 3: Deep Red and Black Atmospheric Overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-[#080706] via-[#080706]/40 to-[#080706]/20" />
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-[#080706]/60 via-transparent to-[#080706]" />
+      {/* LAYER 3: Deep Red and Black Atmospheric Overlay - Lightened by 20% for increased video opacity */}
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-[#080706]/80 via-[#080706]/20 to-transparent" />
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-[#080706]/40 via-transparent to-[#080706]/80" />
 
       {/* LAYER 4: Radial Light & Heat Glow around Center Shield */}
       <div
