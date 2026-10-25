@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <defs>
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5DF" />
+      <stop offset="35%" stop-color="#E5C37E" />
+      <stop offset="70%" stop-color="#D7AD62" />
+      <stop offset="100%" stop-color="#936720" />
+    </linearGradient>
+    <radialGradient id="emblemGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E65B20" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#6F1713" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#080706" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.9" />
+    </filter>
+  </defs>
+
+  <!-- Left Emblem -->
+  <g transform="translate(10, 10)">
+    <circle cx="50" cy="50" r="45" fill="url(#emblemGlow)" />
+    <!-- Outer Shield -->
+    <path d="M50 12 L82 23 C82 58 66 84 50 96 C34 84 18 58 18 23 Z" fill="#120E0D" stroke="url(#logoGold)" stroke-width="2.5" />
+    <!-- Inner Runic Border -->
+    <path d="M50 20 L74 29 C74 54 60 76 50 86 C40 76 26 54 26 29 Z" fill="none" stroke="#E65B20" stroke-width="1.2" opacity="0.8" />
+    <!-- Sword Blade & Hilt -->
+    <line x1="50" y1="18" x2="50" y2="80" stroke="url(#logoGold)" stroke-width="3" stroke-linecap="round" />
+    <line x1="38" y1="32" x2="62" y2="32" stroke="url(#logoGold)" stroke-width="3.5" stroke-linecap="round" />
+    <circle cx="50" cy="16" r="3" fill="url(#logoGold)" />
+    <!-- Winged accents -->
+    <path d="M38 32 C34 45 42 55 48 60" fill="none" stroke="url(#logoGold)" stroke-width="1.5" />
+    <path d="M62 32 C66 45 58 55 52 60" fill="none" stroke="url(#logoGold)" stroke-width="1.5" />
+  </g>
+
+  <!-- Wordmark -->
+  <text x="135" y="70" font-family="'Cinzel', serif" font-weight="900" font-size="44" letter-spacing="8" fill="url(#logoGold)" filter="url(#shadow)">
+    DREADKNIGHT
+  </text>
+  
+  <text x="138" y="95" font-family="'Cinzel', serif" font-weight="600" font-size="11" letter-spacing="4.5" fill="#C9A35E" opacity="0.9">
+    THE LAST OATH OF A DYING KINGDOM
+  </text>
+  
+  <line x1="136" y1="78" x2="480" y2="78" stroke="url(#logoGold)" stroke-width="1" opacity="0.4" />
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="emberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E65B20" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#6F1713" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#080706" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E7D0" />
+      <stop offset="50%" stop-color="#D7AD62" />
+      <stop offset="100%" stop-color="#8C6627" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#080706" />
+  <circle cx="50" cy="50" r="45" fill="url(#emberGlow)" />
+  <!-- Shield Outline -->
+  <path d="M50 15 L78 24 C78 52 64 74 50 85 C36 74 22 52 22 24 Z" fill="#171311" stroke="url(#goldSheen)" stroke-width="3" stroke-linejoin="round" />
+  <!-- Inner Shield Detailing -->
+  <path d="M50 22 L72 29 C72 50 60 68 50 78 C40 68 28 50 28 29 Z" fill="none" stroke="#E65B20" stroke-width="1.5" opacity="0.8" />
+  <!-- Central Greatsword -->
+  <line x1="50" y1="20" x2="50" y2="72" stroke="url(#goldSheen)" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="41" y1="32" x2="59" y2="32" stroke="url(#goldSheen)" stroke-width="3" stroke-linecap="round" />
+  <!-- Pommel -->
+  <circle cx="50" cy="18" r="2.5" fill="url(#goldSheen)" />
+  <!-- Runes / Ember Flares -->
+  <path d="M50 36 L53 45 L50 56 L47 45 Z" fill="#E65B20" />
+</svg>
