@@ -15,7 +15,7 @@ export const TrailerModal: React.FC<TrailerModalProps> = ({ isOpen, onClose }) =
   const chapters = [
     { title: 'The Fall of Vharos', time: 0, text: 'Before the light surrendered, the wardens swore blood upon iron.' },
     { title: 'The Shattered Aegis', time: 2, text: 'The ancient shield burns with the wrath of an imprisoned deity.' },
-    { title: 'The Dreadknight Awakens', time: 4, text: 'Bound by ash. Cursed to stand when all empires collapse.' },
+    { title: 'The Soulbound Awakens', time: 4, text: 'Bound by ash. Cursed to stand when all empires collapse.' },
   ];
 
   useEffect(() => {
@@ -70,7 +70,7 @@ export const TrailerModal: React.FC<TrailerModalProps> = ({ isOpen, onClose }) =
           <div className="flex items-center gap-2">
             <Shield className="h-4 w-4 text-[#D7AD62]" />
             <h3 id="trailer-title" className="font-cinzel text-xs sm:text-sm font-bold tracking-[0.2em] text-gold-gradient">
-              DREADKNIGHT — OFFICIAL CINEMATIC PROLOGUE
+              SOULBOUND — OFFICIAL CINEMATIC PROLOGUE
             </h3>
           </div>
           <button

@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
                 <Shield className="h-4 w-4 text-[#D7AD62]" />
               </div>
               <span className="font-cinzel text-xl font-extrabold tracking-[0.25em] text-gold-gradient">
-                DREADKNIGHT
+                SOULBOUND
               </span>
             </div>
             <p className="font-serif text-sm text-[#C9A35E]/80 italic">
@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
         {/* Disclaimer & Copyright */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-serif text-[#C9A35E]/60">
           <p>
-            &copy; {new Date().getFullYear()} DREADKNIGHT Chronicles. Built with dark medieval fantasy precision.
+            &copy; {new Date().getFullYear()} SOULBOUND Chronicles. Built with dark medieval fantasy precision.
           </p>
 
           <div className="flex items-center gap-4 text-xs font-cinzel">
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
 
         {/* Non-Affiliation Legal Note */}
         <p className="text-[10px] text-center text-[#F3E7D0]/30 font-serif">
-          Dreadknight is an independent conceptual fantasy game project. All fictional characters, lore, and symbols are part of the original Dreadknight mythology. Not affiliated with any commercial publisher.
+          Soulbound is an independent conceptual fantasy game project. All fictional characters, lore, and symbols are part of the original Soulbound mythology. Not affiliated with any commercial publisher.
         </p>
 
       </div>

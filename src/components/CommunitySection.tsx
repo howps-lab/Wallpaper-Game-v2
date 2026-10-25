@@ -88,7 +88,7 @@ export const CommunitySection: React.FC<CommunitySectionProps> = ({ onAnswerCall
         {/* Community Hub Channels */}
         <div className="pt-16 border-t border-[#D7AD62]/20">
           <p className="text-xs font-cinzel tracking-[0.25em] text-[#C9A35E]/80 uppercase mb-6">
-            Join the Order of Dreadknights
+            Join the Order of the Soulbound
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">

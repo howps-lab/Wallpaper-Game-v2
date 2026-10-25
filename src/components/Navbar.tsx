@@ -52,12 +52,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onEnterRealm }) => {
           <button
             onClick={() => scrollToSection('top')}
             className="group flex items-center gap-3 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D7AD62]"
-            aria-label="Dreadknight home"
+            aria-label="Soulbound home"
           >
             <div className="relative h-8 w-8 sm:h-9 sm:w-9 overflow-hidden rounded border border-[#D7AD62]/40 bg-[#171311] shadow-[0_0_12px_rgba(215,173,98,0.25)] transition-transform duration-300 group-hover:scale-105">
               <img
                 src="/favicon.png"
-                alt="Dreadknight Emblem"
+                alt="Soulbound Emblem"
                 className="h-full w-full object-cover"
                 onError={(e) => {
                   // Fallback to SVG icon
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onEnterRealm }) => {
             </div>
             <div>
               <span className="block font-cinzel text-sm sm:text-base font-extrabold tracking-[0.22em] text-gold-gradient">
-                DREADKNIGHT
+                SOULBOUND
               </span>
               <span className="hidden sm:block text-[8px] uppercase tracking-[0.25em] text-[#C9A35E]/70 font-cinzel">
                 The Ashen Oath
