@@ -96,9 +96,9 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
             {/* Knight Drop Shadow & Rim Lighting Effect */}
             <div className="absolute inset-x-12 bottom-6 h-12 bg-black/80 blur-2xl rounded-full" />
             <img
-              src="/hero_art.jpg"
-              alt="The Dreadknight in cursed blackened plate armor"
-              className="relative z-10 max-h-[60vh] sm:max-h-[65vh] lg:max-h-[70vh] w-auto object-contain filter drop-shadow-[0_0_30px_rgba(230,91,32,0.35)] transition-transform duration-700 hover:scale-[1.01]"
+              src="/hero_art.png"
+              alt="The Dreadknight in cursed plate armor"
+              className="relative z-10 max-h-[60vh] sm:max-h-[65vh] lg:max-h-[70vh] w-auto object-contain filter drop-shadow-[0_0_35px_rgba(230,91,32,0.4)] transition-transform duration-700 hover:scale-[1.01]"
               loading="eager"
             />
             {/* Soft ground blending gradient */}
