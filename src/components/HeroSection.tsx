@@ -131,10 +131,9 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
 
           {/* Main Title: SOULBOUND */}
           <div className="relative">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-cinzel-dec tracking-[0.18em] text-gold-gradient drop-shadow-[0_10px_20px_rgba(0,0,0,0.95)]">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-cinzel-dec tracking-[0.18em] text-gold-gradient title-drop-shadow">
               SOULBOUND
             </h1>
-            <div className="absolute -inset-1 blur-xl opacity-30 bg-[#E65B20] -z-10 pointer-events-none" />
           </div>
 
           {/* Decorative medieval separator */}
