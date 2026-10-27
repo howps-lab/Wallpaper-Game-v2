@@ -51,9 +51,9 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
       {/* LAYER 1: Base Black Background */}
       <div className="absolute inset-0 bg-[#080706] z-0" />
 
-      {/* LAYER 2: Flaming-Shield Video (Continuous Loop) - End-to-end on mobile, scaled on desktop */}
+      {/* LAYER 2: Flaming-Shield Video (Continuous Loop) - End-to-end on mobile & tablet, scaled on large desktop */}
       <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden pointer-events-none w-full h-full">
-        <div className="relative w-full h-full flex items-center justify-center scale-100 md:scale-[0.70] origin-center">
+        <div className="relative w-full h-full flex items-center justify-center scale-100 xl:scale-[0.70] origin-center">
           <video
             ref={videoRef}
             autoPlay
